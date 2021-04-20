@@ -2,8 +2,9 @@ import { FETCH_GAMES } from '../types/gamesTypes'
 
 const initState = {
   popular: [],
-  newGames: [],
-  upcoming: []
+  newest: [],
+  upcoming: [],
+  searched: []
 }
 
 const gamesReducer = (state = initState, action) => {
@@ -11,7 +12,9 @@ const gamesReducer = (state = initState, action) => {
     case FETCH_GAMES:
       return {
         ...state,
-        popular: action.payload.popular
+        popular: action.payload.popular,
+        newest: action.payload.newest,
+        upcoming: action.payload.upcoming
       }
     default:
       return {
