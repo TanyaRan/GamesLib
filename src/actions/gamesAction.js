@@ -4,7 +4,6 @@ import { FETCH_GAMES } from '../types/gamesTypes'
 
 // Action Creator
 export const loadGames = () => async dispatch => {
-  // FETCH AXIOS
   const popularData = await axios.get(popularGamesUrl())
   const upcomingData = await axios.get(upcomingGamesUrl())
   const newData = await axios.get(newGamesUrl())
