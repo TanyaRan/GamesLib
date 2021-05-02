@@ -12,12 +12,12 @@ const Home = () => {
     dispatch(loadGames())
   }, [dispatch])
 
-  // Get data from store
-  // const { popular, newest, upcoming } = useSelector(state => state.games)
-  const { upcoming } = useSelector(state => state.games)
+  // Get data from the store
+  const { popular, newest, upcoming } = useSelector(state => state.games)
+  // const { upcoming } = useSelector(state => state.games)
 
   return (
-    <div>
+    <>
       <GameList>
         <h2>Upcoming Games</h2>
         <Games>
@@ -31,8 +31,34 @@ const Home = () => {
             />
           ))}
         </Games>
+
+        <h2>Popular Games</h2>
+        <Games>
+          {popular.map(game => (
+            <Game
+              key={game.id}
+              name={game.name}
+              id={game.id}
+              released={game.released}
+              image={game.background_image}
+            />
+          ))}
+        </Games>
+
+        <h2>Newest Games</h2>
+        <Games>
+          {newest.map(game => (
+            <Game
+              key={game.id}
+              name={game.name}
+              id={game.id}
+              released={game.released}
+              image={game.background_image}
+            />
+          ))}
+        </Games>
       </GameList>
-    </div>
+    </>
   )
 }
 
@@ -47,6 +73,8 @@ const Games = styled(motion.div)`
   min-height: 80vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 5rem;
 `
 
 export default Home
