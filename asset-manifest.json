@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/GamesLib/static/js/main.f96a9732.chunk.js",
+    "main.js.map": "/GamesLib/static/js/main.f96a9732.chunk.js.map",
+    "runtime-main.js": "/GamesLib/static/js/runtime-main.a6372369.js",
+    "runtime-main.js.map": "/GamesLib/static/js/runtime-main.a6372369.js.map",
+    "static/js/2.691cfcd7.chunk.js": "/GamesLib/static/js/2.691cfcd7.chunk.js",
+    "static/js/2.691cfcd7.chunk.js.map": "/GamesLib/static/js/2.691cfcd7.chunk.js.map",
+    "static/js/3.bcdc1b72.chunk.js": "/GamesLib/static/js/3.bcdc1b72.chunk.js",
+    "static/js/3.bcdc1b72.chunk.js.map": "/GamesLib/static/js/3.bcdc1b72.chunk.js.map",
+    "index.html": "/GamesLib/index.html",
+    "static/js/2.691cfcd7.chunk.js.LICENSE.txt": "/GamesLib/static/js/2.691cfcd7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6372369.js",
+    "static/js/2.691cfcd7.chunk.js",
+    "static/js/main.f96a9732.chunk.js"
+  ]
+}
